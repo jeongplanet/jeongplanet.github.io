@@ -3,23 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>툭 - 스트레스 해소 앱 | 화풀이 · 분노조절 · 호흡 명상</title>
-<meta name="description" content="스트레스, 분노, 불안이 쌓였을 때 부수고 터뜨리며 화풀이하는 스트레스 해소 앱 툭. 분노조절, 멘탈케어, 호흡 명상, ASMR 손맛까지 한 번에. 무료로 다운로드하세요.">
-<meta name="keywords" content="스트레스 해소,스트레스 해소 앱,분노조절,화풀이,감정 해소,불안 완화,멘탈케어,공황,호흡 명상,ASMR,힐링 앱,stress relief,anger management,anxiety relief">
+<title>툭 - 감정일기 · 스트레스 해소 앱 | 털어내고 한 줄 남기기</title>
+<meta name="description" content="오늘 쌓인 마음, 손끝으로 툭 털어내고 감정일기 한 줄로 남겨요. 부수고 터뜨리는 24가지 해소 방식, 호흡 명상, 나만 보는 감정일기까지. 기록은 내 폰에만 저장돼요.">
+<meta name="keywords" content="감정일기,감정 일기 앱,일기 앱,마음일기,기분 기록,스트레스 해소,스트레스 해소 앱,화풀이,불안 완화,멘탈케어,마음챙김,호흡 명상,ASMR,힐링 앱,mood journal,stress relief">
 <link rel="canonical" href="https://jeongplanet.github.io/">
 <link rel="alternate" hreflang="ko" href="https://jeongplanet.github.io/">
 <link rel="alternate" hreflang="en" href="https://jeongplanet.github.io/en/">
 <link rel="alternate" hreflang="x-default" href="https://jeongplanet.github.io/">
-<meta property="og:title" content="툭 - 스트레스 해소 앱 | 화풀이 · 분노조절 · 호흡 명상">
-<meta property="og:description" content="쌓인 게 있다면, 손끝으로 풀어봐요. 24가지 방식으로 부수고 터뜨리고 쓸어내리는 스트레스 해소 앱, 툭.">
+<meta property="og:title" content="툭 - 오늘 마음, 툭 털고 한 줄 남겨요">
+<meta property="og:description" content="부수고 터뜨리며 털어내고, 감정일기 한 줄로 마무리하는 나만의 마음 정리 앱.">
 <meta property="og:image" content="https://jeongplanet.github.io/assets/icon.png">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://jeongplanet.github.io/">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="툭 - 스트레스 해소 앱">
-<meta name="twitter:description" content="부수고, 터뜨리고, 쓸어내리는 24가지 방식으로 스트레스와 화를 풀어내는 앱.">
+<meta name="twitter:title" content="툭 - 감정일기 · 스트레스 해소 앱">
+<meta name="twitter:description" content="오늘 마음, 툭 털고 한 줄 남겨요.">
 <meta name="twitter:image" content="https://jeongplanet.github.io/assets/icon.png">
+<meta name="theme-color" content="#FFF7F2">
 <link rel="icon" href="assets/icon.png">
 <script type="application/ld+json">
 {
@@ -28,84 +29,225 @@
   "name": "툭 - 하고 털기",
   "alternateName": "Tuk",
   "url": "https://jeongplanet.github.io/",
-  "description": "스트레스, 분노, 불안을 부수기·터뜨리기·호흡으로 풀어내는 스트레스 해소 앱. 화풀이, 분노조절, 멘탈케어, ASMR 손맛까지 한 번에.",
+  "description": "부수기·터뜨리기·호흡으로 쌓인 마음을 털어내고, 감정일기로 하루를 정리하는 앱. 기록은 기기에만 저장돼요.",
   "applicationCategory": "HealthApplication",
   "operatingSystem": "iOS, Android",
   "image": "https://jeongplanet.github.io/assets/icon.png",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" }
 }
 </script>
-<style>
-  :root{
-    --bg1:#0b1f1d; --bg2:#123a34; --jade:#2E7E77; --jade-light:#7fd9c9;
-    --ink:#eef2f1; --ink-2:#c8d6d2; --haze:#9fb0ac; --card:#0f2a26; --line:#1c3d38;
-  }
-  *{box-sizing:border-box}
-  body{
-    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif;
-    background:linear-gradient(160deg,var(--bg1),var(--bg2) 60%,var(--bg1));
-    color:var(--ink); margin:0; line-height:1.6;
-  }
-  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
-  header.top{display:flex;align-items:center;gap:10px;padding:28px 24px}
-  header.top img{width:34px;height:34px;border-radius:9px}
-  header.top span{font-weight:700;font-size:1.05rem;letter-spacing:-.01em}
-  header.top .langs{margin-left:auto;display:flex;gap:6px;border:1px solid var(--line);border-radius:8px;padding:3px}
-  header.top .langs a{color:var(--haze);text-decoration:none;font-size:.85rem;padding:5px 10px;border-radius:6px}
-  header.top .langs a.on{background:var(--jade);color:#fff}
-
-  .hero{text-align:center;padding:36px 24px 20px}
-  .hero h1{font-size:2.2rem;line-height:1.3;margin:0 0 14px;letter-spacing:-.02em}
-  .hero p.sub{color:var(--ink-2);font-size:1.05rem;margin:0 0 28px}
-  .badges{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:36px}
-  .badge{
-    display:inline-flex;align-items:center;gap:9px;background:#fff;color:#111;
-    padding:11px 20px;border-radius:12px;text-decoration:none;font-weight:600;font-size:.95rem;
-    box-shadow:0 6px 18px -8px rgba(0,0,0,.5); transition:transform .15s ease;
-  }
-  .badge:active{transform:scale(.97)}
-  .badge svg{width:20px;height:20px;flex:none}
-  .hero-shot{max-width:300px;margin:0 auto;border-radius:28px;overflow:hidden;box-shadow:0 30px 60px -20px rgba(0,0,0,.6)}
-  .hero-shot img{display:block;width:100%}
-
-  .features{padding:60px 24px 20px}
-  .features h2{text-align:center;font-size:1.5rem;margin:0 0 40px;letter-spacing:-.01em}
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
-  .card img{display:block;width:100%}
-  .card .cap{padding:16px 18px 20px}
-  .card .cap b{display:block;font-size:1.02rem;margin-bottom:4px}
-  .card .cap span{color:var(--haze);font-size:.86rem}
-
-  .cta{text-align:center;padding:60px 24px}
-  .cta h2{font-size:1.4rem;margin:0 0 24px}
-
-  footer{border-top:1px solid var(--line);padding:32px 24px;text-align:center;color:var(--haze);font-size:.86rem}
-  footer a{color:var(--jade-light);text-decoration:none}
-  footer .flinks{margin-bottom:10px}
-  footer .flinks a{margin:0 10px}
-
-  @media (max-width:720px){
-    .hero h1{font-size:1.7rem}
-    .grid{grid-template-columns:1fr;max-width:340px;margin:0 auto}
-  }
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 
-  <header class="top wrap">
-    <img src="assets/icon.png" alt="툭 아이콘">
-    <span>툭 · 하고 털기</span>
-    <nav class="langs">
-      <a class="on" href="/">한국어</a>
-      <a href="/en/">English</a>
-    </nav>
-  </header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="f-sad" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#B9A6E3"/><circle cx="23" cy="28" r="3" fill="#3B2D3A"/><circle cx="41" cy="28" r="3" fill="#3B2D3A"/><path d="M22 45q10-8 20 0" stroke="#3B2D3A" stroke-width="3" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="f-angry" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#E7849F"/><path d="M18 22l9 4M46 22l-9 4" stroke="#3B2D3A" stroke-width="3" stroke-linecap="round"/><circle cx="24" cy="31" r="3" fill="#3B2D3A"/><circle cx="40" cy="31" r="3" fill="#3B2D3A"/><path d="M24 45h16" stroke="#3B2D3A" stroke-width="3" stroke-linecap="round"/></symbol>
+    <symbol id="f-meh" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#F6E3A7"/><circle cx="23" cy="29" r="3" fill="#3B2D3A"/><circle cx="41" cy="29" r="3" fill="#3B2D3A"/><path d="M23 43h18" stroke="#3B2D3A" stroke-width="3" stroke-linecap="round"/></symbol>
+    <symbol id="f-ok" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#8FCDBA"/><circle cx="23" cy="28" r="3" fill="#3B2D3A"/><circle cx="41" cy="28" r="3" fill="#3B2D3A"/><path d="M22 40q10 8 20 0" stroke="#3B2D3A" stroke-width="3" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="f-calm" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#F4B08E"/><path d="M18 29q5-5 10 0M36 29q5-5 10 0" stroke="#3B2D3A" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M22 40q10 9 20 0" stroke="#3B2D3A" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="16" cy="38" r="4" fill="#E7849F" opacity=".5"/><circle cx="48" cy="38" r="4" fill="#E7849F" opacity=".5"/></symbol>
+    <symbol id="heart" viewBox="0 0 64 64"><path d="M32 56S6 40 6 22a13 13 0 0 1 26-4 13 13 0 0 1 26 4c0 18-26 34-26 34z" fill="#E7849F"/><path d="M18 18a7 7 0 0 1 8-3" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" opacity=".7"/></symbol>
+  </defs>
+</svg>
 
-  <section class="hero wrap">
-    <h1>쌓인 게 있다면,<br>손끝으로 풀어봐요</h1>
-    <p class="sub">스트레스, 화, 불안을 부수고 터뜨리며 풀어내는 스트레스 해소 앱. 화풀이, 분노조절, 호흡 명상, ASMR 손맛까지 한 번에 — 24가지 방식으로 마음까지 정리해요.</p>
-    <div class="badges">
+<span class="blob" style="width:420px;height:420px;background:#F9DCE3;top:-120px;left:-120px"></span>
+<span class="blob" style="width:380px;height:380px;background:#ECE5FA;top:80px;right:-140px"></span>
+
+<header class="top wrap">
+  <img src="assets/icon.png" alt="툭 아이콘">
+  <span>툭 · 하고 털기</span>
+  <nav class="langs">
+    <a class="on" href="/">한국어</a>
+    <a href="/en/">English</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">♡ 감정일기 · 마음 털기</span>
+      <h1>오늘 마음,<br>툭 털고 <em>한 줄</em> 남겨요</h1>
+      <p class="sub">말하기엔 사소하고, 삼키기엔 무거운 하루. 손끝으로 부수고 터뜨려 털어낸 다음, 나만 보는 일기장에 오늘을 살짝 적어두세요.</p>
+      <div class="badges">
+        <a class="badge" href="https://apps.apple.com/app/id6814043279" target="_blank" rel="noopener">
+          <svg viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+          App Store
+        </a>
+        <a class="badge" href="https://play.google.com/store/apps/details?id=com.hesoapp.tuk" target="_blank" rel="noopener">
+          <svg viewBox="0 0 512 512" fill="currentColor"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60-34.1c17.7-11.7 17.7-49.6-1.1-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+          Google Play
+        </a>
+      </div>
+      <p class="free">무료로 시작해요 · 회원가입 없음</p>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="phone"><img src="assets/shot-hero.jpg" alt="" loading="eager"></div>
+      <div class="paper">
+        <div class="date"><span>10월 4일 토요일</span><svg width="24" height="24"><use href="#f-calm"/></svg></div>
+        <div class="hand">괜히 서운했던 그 말,<br>뽁뽁이 한 장 다 터뜨리고<br>나니까 조금 가벼워졌다.<br>내일은 내 편 들어주기 ♡</div>
+      </div>
+      <svg class="sticker s1"><use href="#heart"/></svg>
+      <svg class="sticker s2"><use href="#f-ok"/></svg>
+      <svg class="sticker s3"><use href="#f-sad"/></svg>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">혹시, 오늘도</span>
+      <h2>이런 날 있잖아요</h2>
+    </div>
+    <div class="notes">
+      <div class="note reveal">웃으며 넘겼는데<br>하루 종일 맴도는 그 말<small>퇴근길 지하철에서</small></div>
+      <div class="note reveal">단톡방에 남긴 말,<br>아무도 대답이 없을 때<small>읽음 3, 답장 0</small></div>
+      <div class="note reveal">이유 없이 눈물이 나는<br>새벽 세 시<small>잠은 안 오고</small></div>
+      <div class="note reveal">누구한테 말하기엔<br>너무 사소한 서운함<small>그래도 서운한 건 서운한 거</small></div>
+      <div class="note reveal">잘하고 싶은데<br>마음처럼 안 되는 날<small>나한테 제일 엄격한 나</small></div>
+      <div class="note reveal">다 귀찮고<br>손 하나 까딱하기 싫은 날<small>그런 날도 괜찮아요</small></div>
+    </div>
+    <p class="notes-after reveal">그럴 땐 참지 말고, <em>툭</em> 털어내요.</p>
+  </div>
+</section>
+
+<section class="sec tight">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">하루를 비우는</span>
+      <h2>세 걸음이면 충분해요</h2>
+      <p>길게 쓰지 않아도, 매일 오지 않아도 괜찮아요.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <span class="no">하나,</span>
+        <h3>지금 기분 고르기</h3>
+        <p>마음에 가까운 얼굴 하나만 톡. 이유를 고르면 거기에 맞는 방식을 먼저 골라줘요.</p>
+        <div class="vis moods">
+          <svg><use href="#f-angry"/></svg><svg><use href="#f-sad"/></svg><svg><use href="#f-meh"/></svg><svg><use href="#f-ok"/></svg><svg><use href="#f-calm"/></svg>
+        </div>
+      </div>
+      <div class="step reveal">
+        <span class="no">둘,</span>
+        <h3>손끝으로 털어내기</h3>
+        <p>세게 부수거나, 톡톡 터뜨리거나, 조용히 태우거나. 소리까지 진짜 같은 24가지 방식.</p>
+        <div class="vis modes">
+          <span class="chip">🫧 뽁뽁이</span><span class="chip">🍂 낙엽 밟기</span><span class="chip">🍉 수박 박살</span><span class="chip">🔥 태우기</span><span class="chip">🌊 파도</span><span class="chip">🪨 돌탑 쌓기</span><span class="chip">⌨️ 키보드</span>
+        </div>
+      </div>
+      <div class="step reveal">
+        <span class="no">셋,</span>
+        <h3>숨 고르고 한 줄 일기</h3>
+        <p>원을 따라 숨을 고르고, 달라진 기분과 오늘의 한 줄을 남겨요.</p>
+        <div class="vis write">오늘의 나,<br>꽤 잘 버텼다 ✿</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec diary">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">나만 아는 이야기</span>
+      <h2>아무도 안 보는<br>나만의 감정일기</h2>
+      <p class="lead">털어내고 난 뒤의 마음은 생각보다 솔직해요. 그 순간을 일기처럼 남겨두면, 어느 날 돌아봤을 때 내가 나를 조금 더 알게 돼요.</p>
+      <ul class="checks">
+        <li><i>✎</i><div><b>하루 한 줄, 500자까지</b><span>털어낸 뒤에 써도, '일기 쓰기'로 바로 써도 돼요</span></div></li>
+        <li><i>☺</i><div><b>전후 기분이 함께 남아요</b><span>털기 전과 후, 마음이 얼마나 달라졌는지</span></div></li>
+        <li><i>☾</i><div><b>30일 기분 흐름과 달력</b><span>날짜를 누르면 그날의 일기를 다시 읽을 수 있어요</span></div></li>
+        <li><i>♡</i><div><b>나한테 잘 맞았던 방식</b><span>어떤 방식이 나를 제일 편하게 했는지 알려줘요</span></div></li>
+        <li><i>🔒</i><div><b>기록은 내 폰에만</b><span>로그인도, 서버 전송도 없어요</span></div></li>
+      </ul>
+    </div>
+    <div class="reveal">
+      <div class="book">
+        <svg class="heart"><use href="#heart"/></svg>
+        <div class="bh"><span class="d">10월 4일</span><span class="w">토요일 · 밤 11:42</span></div>
+        <div class="moodflow"><svg><use href="#f-angry"/></svg><span class="arrow">→</span><svg><use href="#f-calm"/></svg><span>털기 전보다 훨씬 가벼워요</span></div>
+        <div class="hand">회의 끝나고 괜히 서운했던 마음.<br>수박 한 통 시원하게 깨고 나니<br>이상하게 웃음이 났다.<br>내일은 조금 더 내 편 들어주기.</div>
+        <span class="tag"># 회사</span> <span class="tag peach"># 수박 박살내기</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">내 마음에 쏙 들게</span>
+      <h2>작은 것까지 내 취향대로</h2>
+    </div>
+    <div class="likes">
+      <div class="like reveal">
+        <div class="swatches"><i style="background:#2E7E77"></i><i style="background:#D46A8C"></i><i style="background:#8B6FC9"></i><i style="background:#E0875A"></i><i style="background:#4A90C4"></i><i style="background:#B8894A"></i></div>
+        <h3>여섯 가지 배경 색</h3><p>세이지, 로즈, 라벤더, 피치, 하늘, 크림. 다크 모드도 있어요.</p>
+      </div>
+      <div class="like reveal">
+        <div class="fonts"><span>가나다</span><span>가나다</span><span>가나다</span></div>
+        <h3>손글씨까지, 글꼴 다섯 가지</h3><p>일기 쓰는 맛이 나도록 좋아하는 글씨체로 골라요.</p>
+      </div>
+      <div class="like reveal">
+        <span class="bubble">오늘 하루 어땠나요?</span>
+        <h3>밤 9시, 다정한 알림</h3><p>원할 때만 켜요. 억지로 오라고 조르지 않아요.</p>
+      </div>
+      <div class="like reveal">
+        <div class="fortune">작은 행운이 하루 종일 쌓여요</div>
+        <h3>오늘의 운세</h3><p>체크인 화면에서 살짝 열어보는 오늘의 한 마디.</p>
+      </div>
+      <div class="like reveal">
+        <span class="sos">SOS</span>
+        <h3>급할 땐 SOS 위젯</h3><p>홈 화면에서 한 번 누르면 바로 숨 고르기로.</p>
+      </div>
+      <div class="like reveal">
+        <span class="modecount">24</span>
+        <h3>손맛 가득 24가지 방식</h3><p>유리, 얼음, 도자기, 왁스, 낙엽… 부딪히는 소리까지 골라요.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec night">
+  <div class="stars"></div>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">잠 못 드는 밤에도</span>
+      <h2>조용히, 곁에 있어요</h2>
+      <p>불 끄고 누운 밤에도 눈부시지 않게. 실제 앱 화면이에요.</p>
+    </div>
+  </div>
+  <div class="shots">
+    <figure><img src="assets/shot-hero.jpg" alt="체크인 화면에서 지금 기분 고르기" loading="lazy"><figcaption>지금 기분부터, 부담 없이</figcaption></figure>
+    <figure><img src="assets/shot-burn.jpg" alt="태우기 모드" loading="lazy"><figcaption>말없이 다 태워버리고 싶은 날</figcaption></figure>
+    <figure><img src="assets/shot-breathe.jpg" alt="다섯 가지 호흡 패턴" loading="lazy"><figcaption>다섯 가지 호흡으로 정리</figcaption></figure>
+    <figure><img src="assets/shot-log.jpg" alt="전후 기분 기록과 달력" loading="lazy"><figcaption>나만 보는 기록과 달력</figcaption></figure>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">툭이 지키는</span>
+      <h2>세 가지 약속</h2>
+    </div>
+    <div class="promise">
+      <div class="reveal"><div class="ic">🌙</div><b>점수도, 연속 기록도 없어요</b><span>매일 안 와도 되는 앱이에요. 필요할 때만 와요.</span></div>
+      <div class="reveal"><div class="ic">🔒</div><b>기록은 내 폰에만</b><span>일기도 기분도 어디로도 보내지지 않아요.</span></div>
+      <div class="reveal"><div class="ic">🌷</div><b>안 풀려도 괜찮아요</b><span>"오늘은 잘 안 풀렸어요"도 소중한 기록이에요.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <span class="blob" style="width:360px;height:360px;background:#F9DCE3;left:10%;top:10%"></span>
+  <span class="blob" style="width:320px;height:320px;background:#FDE7DA;right:8%;bottom:0"></span>
+  <div class="wrap">
+    <h2 class="reveal">오늘 마음,<br>여기 두고 가요</h2>
+    <p class="reveal">무료로 바로 시작할 수 있어요.</p>
+    <div class="badges reveal">
       <a class="badge" href="https://apps.apple.com/app/id6814043279" target="_blank" rel="noopener">
         <svg viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
         App Store
@@ -115,59 +257,18 @@
         Google Play
       </a>
     </div>
-    <div class="hero-shot">
-      <img src="assets/shot-hero.jpg" alt="툭 앱 스크린샷 - 수박 박살내기" loading="eager">
-    </div>
-  </section>
+    <p class="hand reveal">오늘도 수고했어요 ♡</p>
+  </div>
+</section>
 
-  <section class="features wrap">
-    <h2>부수는 것만으로 끝나지 않아요</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="assets/shot-breathe.jpg" alt="다섯 가지 호흡 패턴" loading="lazy">
-        <div class="cap"><b>다섯 가지 호흡</b><span>어지럽거나 힘들면 언제든 편한 패턴으로 바꿀 수 있어요</span></div>
-      </div>
-      <div class="card">
-        <img src="assets/shot-log.jpg" alt="전후 기분 변화 기록" loading="lazy">
-        <div class="cap"><b>나만 보는 기록</b><span>어디로도 전송되지 않고, 이 기기에만 남아요</span></div>
-      </div>
-      <div class="card">
-        <img src="assets/shot-burn.jpg" alt="태우기 모드" loading="lazy">
-        <div class="cap"><b>태우기</b><span>말없이 그냥 다 태워버리고 싶은 날엔 이거 하나로</span></div>
-      </div>
-    </div>
-  </section>
+<footer>
+  <div class="flinks">
+    <a href="https://pollen-witch-f01.notion.site/3d0eb9661eb780e7a5b0df65c54f6725">개인정보처리방침</a>
+    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">이용약관</a>
+  </div>
+  문의: gasmon0@gmail.com
+</footer>
 
-  <section class="features wrap">
-    <h2>이런 분들께 추천해요</h2>
-    <div class="grid">
-      <div class="card"><div class="cap"><b>화가 치밀 때</b><span>참지 말고 부수고 터뜨리며 화풀이, 분노조절이 필요할 때</span></div></div>
-      <div class="card"><div class="cap"><b>불안하고 잠이 안 올 때</b><span>호흡 명상 패턴으로 마음을 가라앉히고 싶을 때</span></div></div>
-      <div class="card"><div class="cap"><b>감정 기록이 필요할 때</b><span>스트레스 해소 전후 기분 변화를 멘탈케어 일지처럼 남기고 싶을 때</span></div></div>
-    </div>
-  </section>
-
-  <section class="cta wrap">
-    <h2>지금 시작해봐요</h2>
-    <div class="badges">
-      <a class="badge" href="https://apps.apple.com/app/id6814043279" target="_blank" rel="noopener">
-        <svg viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
-        App Store
-      </a>
-      <a class="badge" href="https://play.google.com/store/apps/details?id=com.hesoapp.tuk" target="_blank" rel="noopener">
-        <svg viewBox="0 0 512 512" fill="currentColor"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60-34.1c17.7-11.7 17.7-49.6-1.1-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
-        Google Play
-      </a>
-    </div>
-  </section>
-
-  <footer>
-    <div class="flinks">
-      <a href="https://pollen-witch-f01.notion.site/3d0eb9661eb780e7a5b0df65c54f6725">개인정보처리방침</a>
-      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">이용약관</a>
-    </div>
-    문의: gasmon0@gmail.com
-  </footer>
-
+<script src="assets/site.js"></script>
 </body>
 </html>

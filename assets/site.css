@@ -1,0 +1,181 @@
+:root{
+  --bg:#FFF7F2; --paper:#FFFDFB; --ink:#3B2D3A; --ink-2:#6E5D6B; --haze:#A8979F;
+  --rose:#E7849F; --rose-soft:#F9DCE3; --lav-soft:#ECE5FA;
+  --peach-soft:#FDE7DA; --mint-soft:#DDF3EC; --line:#F0DDE2;
+  --serif:"Gowun Batang",serif; --sans:"Gowun Dodum",-apple-system,"Apple SD Gothic Neo",sans-serif; --pen:"Nanum Pen Script",cursive;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans); line-height:1.7; overflow-x:hidden; -webkit-font-smoothing:antialiased}
+img{max-width:100%}
+.wrap{position:relative; z-index:1; max-width:1080px; margin:0 auto; padding:0 22px}
+h1,h2,h3{font-family:var(--serif); letter-spacing:-.02em; margin:0}
+em{font-style:normal}
+
+.blob{position:absolute; border-radius:50%; filter:blur(50px); opacity:.55; pointer-events:none; z-index:0}
+
+header.top{z-index:2; display:flex; align-items:center; gap:10px; padding-top:22px; padding-bottom:22px}
+header.top img{width:36px; height:36px; border-radius:10px; box-shadow:0 4px 12px -4px rgba(59,45,58,.35)}
+header.top span{font-family:var(--serif); font-weight:700; font-size:1.05rem}
+header.top .langs{margin-left:auto; display:flex; gap:4px; background:rgba(255,255,255,.7); border:1px solid var(--line); border-radius:99px; padding:3px}
+header.top .langs a{color:var(--ink-2); text-decoration:none; font-size:.82rem; padding:5px 12px; border-radius:99px}
+header.top .langs a.on{background:var(--ink); color:#fff}
+
+/* 히어로 */
+.hero{position:relative; padding:30px 0 70px}
+.hero .wrap{display:grid; grid-template-columns:1.05fr .95fr; gap:40px; align-items:center}
+.eyebrow{display:inline-flex; gap:6px; align-items:center; font-size:.85rem; color:var(--rose); background:#fff; border:1px solid var(--rose-soft); padding:5px 13px; border-radius:99px; margin-bottom:18px}
+.hero h1{font-size:3rem; line-height:1.3; margin-bottom:18px}
+.hero h1 em{position:relative; z-index:0; white-space:nowrap}
+.hero h1 em::after{content:""; position:absolute; left:-4px; right:-4px; bottom:.12em; height:.38em; background:var(--rose-soft); z-index:-1; border-radius:4px; transform:rotate(-1deg)}
+.hero p.sub{font-size:1.08rem; color:var(--ink-2); margin:0 0 28px; max-width:30em}
+.badges{display:flex; gap:10px; flex-wrap:wrap}
+.badge{display:inline-flex; align-items:center; gap:9px; background:var(--ink); color:#fff; padding:12px 20px; border-radius:14px; text-decoration:none; font-weight:600; font-size:.95rem; box-shadow:0 10px 24px -12px rgba(59,45,58,.6); transition:transform .15s}
+.badge:hover{transform:translateY(-2px)}
+.badge svg{width:19px; height:19px; flex:none}
+.free{font-size:.82rem; color:var(--haze); margin-top:12px}
+
+.stage{position:relative; height:540px}
+.phone{position:absolute; right:40px; top:0; width:250px; border-radius:34px; overflow:hidden; border:7px solid #fff; box-shadow:0 40px 70px -30px rgba(59,45,58,.55); transform:rotate(4deg)}
+.phone img{display:block; width:100%}
+.paper{position:absolute; left:0; bottom:20px; width:270px; background-color:var(--paper); border-radius:6px; padding:30px 24px 22px; box-shadow:0 24px 50px -24px rgba(59,45,58,.45); transform:rotate(-5deg)}
+.paper::before{content:""; position:absolute; top:-12px; left:50%; width:90px; height:26px; margin-left:-45px; background:rgba(185,166,227,.55); transform:rotate(3deg)}
+.paper .date{font-size:.78rem; color:var(--haze); margin-bottom:6px; display:flex; justify-content:space-between; align-items:center}
+.hand{font-family:var(--pen); color:#4A3848}
+.paper .hand{font-size:1.55rem; line-height:32px; background-image:repeating-linear-gradient(transparent 0 31px, #F3E4E8 31px 32px)}
+.sticker{position:absolute; width:62px; height:62px; filter:drop-shadow(0 8px 12px rgba(59,45,58,.2))}
+.s1{right:0; top:300px; animation:bob 5s ease-in-out infinite}
+.s2{left:40px; top:40px; width:54px; height:54px; animation:bob 6s ease-in-out infinite .8s}
+.s3{right:260px; top:190px; width:44px; height:44px; animation:bob 7s ease-in-out infinite .3s}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-4deg)} 50%{transform:translateY(-10px) rotate(4deg)}}
+
+section{position:relative}
+.sec{padding:80px 0}
+.sec.tight{padding-top:20px}
+.sec-head{text-align:center; max-width:640px; margin:0 auto 44px}
+.kicker{font-family:var(--pen); font-size:1.6rem; color:var(--rose); display:block; margin-bottom:4px}
+.sec-head h2{font-size:2rem; line-height:1.4}
+.sec-head p{color:var(--ink-2); margin:12px 0 0}
+
+/* 이런 날 */
+.notes{display:grid; grid-template-columns:repeat(3,1fr); gap:22px}
+.note{font-family:var(--pen); font-size:1.6rem; line-height:1.35; padding:26px 22px 30px; border-radius:4px; box-shadow:0 14px 26px -18px rgba(59,45,58,.45)}
+.note:nth-child(1){background:var(--rose-soft); --r:-2deg}
+.note:nth-child(2){background:var(--lav-soft); --r:1.5deg}
+.note:nth-child(3){background:var(--peach-soft); --r:-1deg}
+.note:nth-child(4){background:var(--mint-soft); --r:2deg}
+.note:nth-child(5){background:#FFF3C9; --r:-1.5deg}
+.note:nth-child(6){background:#E3EEFB; --r:1deg}
+.note small{display:block; font-family:var(--sans); font-size:.8rem; color:var(--ink-2); margin-top:10px}
+.notes-after{text-align:center; margin-top:40px; font-family:var(--serif); font-size:1.2rem}
+.notes-after em{color:var(--rose)}
+
+/* 세 걸음 */
+.steps{display:grid; grid-template-columns:repeat(3,1fr); gap:22px}
+.step{background:#fff; border:1px solid var(--line); border-radius:26px; padding:28px 26px; box-shadow:0 20px 40px -32px rgba(59,45,58,.5)}
+.step .no{font-family:var(--pen); font-size:1.5rem; color:var(--rose)}
+.step h3{font-size:1.3rem; margin:2px 0 8px}
+.step p{color:var(--ink-2); font-size:.95rem; margin:0 0 18px}
+.vis{height:120px; border-radius:18px; display:flex; align-items:center; justify-content:center; gap:8px; flex-wrap:wrap; padding:12px}
+.vis.moods{background:var(--rose-soft)}
+.vis.moods svg{width:40px; height:40px}
+.vis.modes{background:var(--lav-soft); align-content:center}
+.chip{font-size:.8rem; background:#fff; border-radius:99px; padding:5px 11px; color:var(--ink); box-shadow:0 3px 8px -5px rgba(59,45,58,.4)}
+.vis.write{background:var(--peach-soft); font-family:var(--pen); font-size:1.5rem; color:#4A3848; text-align:center; line-height:1.3}
+
+/* 일기 */
+.diary{background:linear-gradient(180deg,var(--bg),#FCEFF2 40%,var(--bg))}
+.diary .wrap{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center}
+.diary h2{font-size:2.1rem; line-height:1.4; margin-bottom:16px}
+.diary .lead{color:var(--ink-2); margin:0 0 24px}
+.checks{list-style:none; padding:0; margin:0}
+.checks li{display:flex; gap:12px; align-items:flex-start; padding:10px 0; border-bottom:1px dashed var(--line)}
+.checks li:last-child{border:0}
+.checks i{flex:none; width:26px; height:26px; border-radius:50%; background:var(--rose-soft); display:flex; align-items:center; justify-content:center; font-style:normal; font-size:.8rem; margin-top:2px}
+.checks b{display:block; font-size:1rem}
+.checks span{font-size:.88rem; color:var(--ink-2)}
+.book{position:relative; background:var(--paper); border-radius:10px 22px 22px 10px; padding:34px 32px 30px 44px; box-shadow:0 40px 70px -40px rgba(59,45,58,.6); transform:rotate(1.5deg)}
+.book::before{content:""; position:absolute; left:18px; top:0; bottom:0; width:2px; background:#F2C9D3}
+.book .bh{display:flex; justify-content:space-between; align-items:center; margin-bottom:14px}
+.book .bh .d{font-family:var(--serif); font-weight:700; font-size:1.05rem}
+.book .bh .w{font-size:.8rem; color:var(--haze)}
+.moodflow{display:flex; align-items:center; gap:10px; background:#FFF4F6; border-radius:14px; padding:10px 14px; margin-bottom:16px; font-size:.85rem; color:var(--ink-2)}
+.moodflow svg{width:30px; height:30px; flex:none}
+.moodflow .arrow{color:var(--rose)}
+.book .hand{font-size:1.65rem; line-height:34px; background-image:repeating-linear-gradient(transparent 0 33px, #F3E4E8 33px 34px)}
+.tag{display:inline-block; margin-top:14px; font-size:.78rem; background:var(--lav-soft); color:#6A58A0; border-radius:99px; padding:4px 11px}
+.tag.peach{background:var(--peach-soft); color:#B0603C}
+.book .heart{position:absolute; right:-14px; top:-18px; width:58px; height:58px; transform:rotate(12deg)}
+
+/* 취향 */
+.likes{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
+.like{background:#fff; border:1px solid var(--line); border-radius:24px; padding:24px}
+.like h3{font-size:1.12rem; margin:12px 0 6px}
+.like p{margin:0; color:var(--ink-2); font-size:.92rem}
+.swatches{display:flex; gap:8px}
+.swatches i{width:30px; height:30px; border-radius:50%; box-shadow:inset 0 0 0 3px rgba(255,255,255,.6)}
+.fonts{display:flex; gap:12px; align-items:baseline; font-size:1.3rem}
+.fonts span:nth-child(1){font-family:var(--serif)}
+.fonts span:nth-child(2){font-family:var(--sans)}
+.fonts span:nth-child(3){font-family:var(--pen); font-size:1.7rem}
+.bubble{display:inline-block; background:var(--ink); color:#fff; font-size:.85rem; border-radius:16px 16px 16px 4px; padding:8px 14px}
+.fortune{font-family:var(--pen); font-size:1.35rem; background:#FFF3C9; border-radius:14px; padding:8px 14px; line-height:1.3}
+.sos{display:inline-flex; width:48px; height:48px; border-radius:50%; align-items:center; justify-content:center; font-size:.72rem; font-weight:700; color:#fff; background:radial-gradient(circle at 35% 30%,#F7B79C,#E07A5F); box-shadow:0 8px 16px -8px #E07A5F}
+.modecount{font-family:var(--serif); font-size:2.3rem; font-weight:700; color:var(--rose); line-height:1}
+
+/* 밤 */
+.night{background:#2B2238; color:#F6EEF3; overflow:hidden}
+.night .sec-head h2{color:#fff}
+.night .sec-head p{color:#CDBFD0}
+.night .kicker{color:#F2B6C6}
+.shots{position:relative; z-index:1; display:flex; gap:20px; overflow-x:auto; padding:6px 22px 24px; scroll-snap-type:x mandatory; justify-content:center}
+.shots figure{flex:none; width:220px; margin:0; scroll-snap-align:center}
+.shots img{display:block; width:100%; border-radius:26px; box-shadow:0 24px 40px -20px rgba(0,0,0,.7)}
+.shots figcaption{text-align:center; font-size:.85rem; color:#CDBFD0; margin-top:12px}
+.stars{position:absolute; inset:0; pointer-events:none; background-image:radial-gradient(1.5px 1.5px at 10% 20%,#fff8,transparent),radial-gradient(1px 1px at 30% 70%,#fff6,transparent),radial-gradient(1.5px 1.5px at 70% 15%,#fff8,transparent),radial-gradient(1px 1px at 85% 60%,#fff6,transparent),radial-gradient(1px 1px at 55% 40%,#fff5,transparent)}
+
+/* 약속 */
+.promise{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; max-width:880px; margin:0 auto}
+.promise > div{text-align:center; padding:26px 18px; border-radius:22px; background:#fff; border:1px solid var(--line)}
+.promise .ic{font-size:1.8rem}
+.promise b{display:block; font-family:var(--serif); font-size:1.08rem; margin:8px 0 4px}
+.promise span{font-size:.9rem; color:var(--ink-2)}
+
+.cta{text-align:center; padding:90px 0 100px; overflow:hidden}
+.cta h2{font-size:2.2rem; line-height:1.4; margin-bottom:12px}
+.cta p{color:var(--ink-2); margin:0 0 30px}
+.cta .badges{justify-content:center}
+.cta .hand{font-size:1.6rem; color:var(--rose); margin-top:26px}
+
+footer{border-top:1px solid var(--line); padding:30px 22px 40px; text-align:center; color:var(--haze); font-size:.85rem}
+footer a{color:var(--ink-2); text-decoration:none; margin:0 10px}
+footer .flinks{margin-bottom:8px}
+
+/* 스크롤 등장 -- 쪽지는 기울기(--r)를 유지한 채로 올라옴 */
+.reveal{opacity:0; transform:translateY(24px) rotate(var(--r,0deg)); transition:opacity .8s ease, transform .8s ease}
+.reveal.in{opacity:1; transform:rotate(var(--r,0deg))}
+.no-js .reveal{opacity:1; transform:rotate(var(--r,0deg))}
+@media (prefers-reduced-motion:reduce){ .reveal{opacity:1; transform:rotate(var(--r,0deg)); transition:none} .sticker{animation:none} }
+
+@media (max-width:860px){
+  .hero .wrap, .diary .wrap{grid-template-columns:1fr}
+  .hero{text-align:center; padding-top:10px}
+  .hero p.sub{margin-left:auto; margin-right:auto}
+  .badges{justify-content:center}
+  .hero h1{font-size:2.2rem}
+  .stage{height:470px; max-width:400px; margin:0 auto; width:100%}
+  .phone{width:210px; right:10px}
+  .paper{width:230px; padding:26px 18px 18px}
+  .paper .hand{font-size:1.35rem}
+  .s3{right:200px}
+  .steps, .likes, .promise{grid-template-columns:1fr}
+  .notes{grid-template-columns:1fr 1fr; gap:14px}
+  .note{font-size:1.2rem; padding:18px 14px 20px}
+  .note small{font-size:.72rem}
+  .sec{padding:60px 0}
+  .sec-head h2, .diary h2{font-size:1.6rem}
+  .cta h2{font-size:1.7rem}
+  .book{transform:none; padding:28px 22px 24px 36px}
+  .book .hand{font-size:1.45rem}
+  .shots{justify-content:flex-start}
+}

@@ -3,108 +3,251 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tuk - Stress Relief App | Anger Management & Breathing</title>
-<meta name="description" content="Tuk is a hands-on stress relief app for anxiety and anger management: smash, tap, and sweep things away, plus breathing exercises and a mood log to help you unwind. Free download.">
-<meta name="keywords" content="stress relief app,anger management,anxiety relief,stress relief,breathing exercise app,fidget app,mental health app,panic relief,ASMR,relaxation app,tuk">
+<title>Tuk - Mood Journal & Stress Relief App | Shake it off, write one line</title>
+<meta name="description" content="Shake off what piled up today with your fingertips, then keep it in a private mood journal. 24 hands-on ways to smash and pop, breathing exercises, and a diary that stays on your phone.">
+<meta name="keywords" content="mood journal,mood journal app,diary app,emotion journal,feelings diary,stress relief app,anxiety relief,anger management,breathing exercise app,self care app,mindfulness,ASMR,tuk">
 <link rel="canonical" href="https://jeongplanet.github.io/en/">
 <link rel="alternate" hreflang="ko" href="https://jeongplanet.github.io/">
 <link rel="alternate" hreflang="en" href="https://jeongplanet.github.io/en/">
 <link rel="alternate" hreflang="x-default" href="https://jeongplanet.github.io/">
-<meta property="og:title" content="Tuk - Stress Relief App | Anger Management & Breathing">
-<meta property="og:description" content="If something's piling up, work it out by hand. 24 ways to smash, pop, and sweep away stress, anger, and anxiety.">
-<meta property="og:image" content="https://jeongplanet.github.io/en/assets/icon.png">
+<meta property="og:title" content="Tuk - Shake it off, write one line">
+<meta property="og:description" content="Smash and pop it out, then end the day with one line in your own mood journal.">
+<meta property="og:image" content="https://jeongplanet.github.io/assets/icon.png">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://jeongplanet.github.io/en/">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Tuk - Stress Relief App">
-<meta name="twitter:description" content="24 ways to smash, pop, and sweep away stress, anger, and anxiety.">
-<meta name="twitter:image" content="https://jeongplanet.github.io/en/assets/icon.png">
+<meta name="twitter:title" content="Tuk - Mood Journal & Stress Relief">
+<meta name="twitter:description" content="Shake it off, write one line.">
+<meta name="twitter:image" content="https://jeongplanet.github.io/assets/icon.png">
+<meta name="theme-color" content="#FFF7F2">
 <link rel="icon" href="assets/icon.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "MobileApplication",
-  "name": "Tuk - Shake It Off",
+  "name": "Tuk",
   "url": "https://jeongplanet.github.io/en/",
-  "description": "A hands-on stress relief app: smash, tap, and sweep things away, plus breathing exercises and a mood log for anxiety and anger management.",
+  "description": "Shake off stress by smashing, popping and breathing, then wrap up the day in a private mood journal. Everything stays on your device.",
   "applicationCategory": "HealthApplication",
   "operatingSystem": "iOS, Android",
-  "image": "https://jeongplanet.github.io/en/assets/icon.png",
+  "image": "https://jeongplanet.github.io/assets/icon.png",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
 }
 </script>
-<style>
-  :root{
-    --bg1:#0b1f1d; --bg2:#123a34; --jade:#2E7E77; --jade-light:#7fd9c9;
-    --ink:#eef2f1; --ink-2:#c8d6d2; --haze:#9fb0ac; --card:#0f2a26; --line:#1c3d38;
-  }
-  *{box-sizing:border-box}
-  body{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-    background:linear-gradient(160deg,var(--bg1),var(--bg2) 60%,var(--bg1));
-    color:var(--ink); margin:0; line-height:1.6;
-  }
-  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
-  header.top{display:flex;align-items:center;gap:10px;padding:28px 24px}
-  header.top img{width:34px;height:34px;border-radius:9px}
-  header.top span{font-weight:700;font-size:1.05rem;letter-spacing:-.01em}
-  header.top .langs{margin-left:auto;display:flex;gap:6px;border:1px solid var(--line);border-radius:8px;padding:3px}
-  header.top .langs a{color:var(--haze);text-decoration:none;font-size:.85rem;padding:5px 10px;border-radius:6px}
-  header.top .langs a.on{background:var(--jade);color:#fff}
-
-  .hero{text-align:center;padding:36px 24px 20px}
-  .hero h1{font-size:2.1rem;line-height:1.3;margin:0 0 14px;letter-spacing:-.02em}
-  .hero p.sub{color:var(--ink-2);font-size:1.05rem;margin:0 0 28px}
-  .badges{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:36px}
-  .badge{
-    display:inline-flex;align-items:center;gap:9px;background:#fff;color:#111;
-    padding:11px 20px;border-radius:12px;text-decoration:none;font-weight:600;font-size:.95rem;
-    box-shadow:0 6px 18px -8px rgba(0,0,0,.5); transition:transform .15s ease;
-  }
-  .badge:active{transform:scale(.97)}
-  .badge svg{width:20px;height:20px;flex:none}
-  .hero-shot{max-width:300px;margin:0 auto;border-radius:28px;overflow:hidden;box-shadow:0 30px 60px -20px rgba(0,0,0,.6)}
-  .hero-shot img{display:block;width:100%}
-
-  .features{padding:60px 24px 20px}
-  .features h2{text-align:center;font-size:1.5rem;margin:0 0 40px;letter-spacing:-.01em}
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
-  .card img{display:block;width:100%}
-  .card .cap{padding:16px 18px 20px}
-  .card .cap b{display:block;font-size:1.02rem;margin-bottom:4px}
-  .card .cap span{color:var(--haze);font-size:.86rem}
-
-  .cta{text-align:center;padding:60px 24px}
-  .cta h2{font-size:1.4rem;margin:0 0 24px}
-
-  footer{border-top:1px solid var(--line);padding:32px 24px;text-align:center;color:var(--haze);font-size:.86rem}
-  footer a{color:var(--jade-light);text-decoration:none}
-  footer .flinks{margin-bottom:10px}
-  footer .flinks a{margin:0 10px}
-
-  @media (max-width:720px){
-    .hero h1{font-size:1.6rem}
-    .grid{grid-template-columns:1fr;max-width:340px;margin:0 auto}
-  }
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&family=Caveat:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<style>:root{--pen:"Caveat",cursive}</style>
 </head>
 <body>
 
-  <header class="top wrap">
-    <img src="assets/icon.png" alt="Tuk icon">
-    <span>Tuk · Shake It Off</span>
-    <nav class="langs">
-      <a href="/">한국어</a>
-      <a class="on" href="/en/">English</a>
-    </nav>
-  </header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="f-sad" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#B9A6E3"/><circle cx="23" cy="28" r="3" fill="#3B2D3A"/><circle cx="41" cy="28" r="3" fill="#3B2D3A"/><path d="M22 45q10-8 20 0" stroke="#3B2D3A" stroke-width="3" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="f-angry" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#E7849F"/><path d="M18 22l9 4M46 22l-9 4" stroke="#3B2D3A" stroke-width="3" stroke-linecap="round"/><circle cx="24" cy="31" r="3" fill="#3B2D3A"/><circle cx="40" cy="31" r="3" fill="#3B2D3A"/><path d="M24 45h16" stroke="#3B2D3A" stroke-width="3" stroke-linecap="round"/></symbol>
+    <symbol id="f-meh" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#F6E3A7"/><circle cx="23" cy="29" r="3" fill="#3B2D3A"/><circle cx="41" cy="29" r="3" fill="#3B2D3A"/><path d="M23 43h18" stroke="#3B2D3A" stroke-width="3" stroke-linecap="round"/></symbol>
+    <symbol id="f-ok" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#8FCDBA"/><circle cx="23" cy="28" r="3" fill="#3B2D3A"/><circle cx="41" cy="28" r="3" fill="#3B2D3A"/><path d="M22 40q10 8 20 0" stroke="#3B2D3A" stroke-width="3" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="f-calm" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#F4B08E"/><path d="M18 29q5-5 10 0M36 29q5-5 10 0" stroke="#3B2D3A" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M22 40q10 9 20 0" stroke="#3B2D3A" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="16" cy="38" r="4" fill="#E7849F" opacity=".5"/><circle cx="48" cy="38" r="4" fill="#E7849F" opacity=".5"/></symbol>
+    <symbol id="heart" viewBox="0 0 64 64"><path d="M32 56S6 40 6 22a13 13 0 0 1 26-4 13 13 0 0 1 26 4c0 18-26 34-26 34z" fill="#E7849F"/><path d="M18 18a7 7 0 0 1 8-3" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" opacity=".7"/></symbol>
+  </defs>
+</svg>
 
-  <section class="hero wrap">
-    <h1>If something's piling up,<br>work it out by hand</h1>
-    <p class="sub">A stress relief app for anger and anxiety — smash, pop, and sweep it away, or breathe through it with guided breathing exercises. 24 ways to let it out.</p>
-    <div class="badges">
+<span class="blob" style="width:420px;height:420px;background:#F9DCE3;top:-120px;left:-120px"></span>
+<span class="blob" style="width:380px;height:380px;background:#ECE5FA;top:80px;right:-140px"></span>
+
+<header class="top wrap">
+  <img src="assets/icon.png" alt="Tuk icon">
+  <span>Tuk · shake it off</span>
+  <nav class="langs">
+    <a href="/">한국어</a>
+    <a class="on" href="/en/">English</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">♡ Mood journal · Stress relief</span>
+      <h1>Shake it off,<br>then write <em>one line</em></h1>
+      <p class="sub">Some days are too small to talk about and too heavy to swallow. Smash and pop it out with your fingertips, then leave a little note about today in a diary only you can see.</p>
+      <div class="badges">
+        <a class="badge" href="https://apps.apple.com/app/id6814043279" target="_blank" rel="noopener">
+          <svg viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+          App Store
+        </a>
+        <a class="badge" href="https://play.google.com/store/apps/details?id=com.hesoapp.tuk" target="_blank" rel="noopener">
+          <svg viewBox="0 0 512 512" fill="currentColor"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60-34.1c17.7-11.7 17.7-49.6-1.1-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+          Google Play
+        </a>
+      </div>
+      <p class="free">Free to start · No sign-up</p>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="phone"><img src="assets/shot-hero.jpg" alt="" loading="eager"></div>
+      <div class="paper">
+        <div class="date"><span>Saturday, Oct 4</span><svg width="24" height="24"><use href="#f-calm"/></svg></div>
+        <div class="hand">That comment still stung.<br>Popped a whole sheet of<br>bubble wrap — feel lighter.<br>Tomorrow: be on my side ♡</div>
+      </div>
+      <svg class="sticker s1"><use href="#heart"/></svg>
+      <svg class="sticker s2"><use href="#f-ok"/></svg>
+      <svg class="sticker s3"><use href="#f-sad"/></svg>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">maybe today, too</span>
+      <h2>You know those days</h2>
+    </div>
+    <div class="notes">
+      <div class="note reveal">You laughed it off,<br>but it's stuck on repeat<small>on the train home</small></div>
+      <div class="note reveal">You said something<br>in the group chat… silence<small>read by 3, replies 0</small></div>
+      <div class="note reveal">3am, crying<br>for no reason at all<small>and still can't sleep</small></div>
+      <div class="note reveal">Too small to tell anyone,<br>too big to let go<small>hurt is still hurt</small></div>
+      <div class="note reveal">You want to do well,<br>but nothing goes right<small>your own harshest critic</small></div>
+      <div class="note reveal">Too tired to<br>lift a single finger<small>those days are okay too</small></div>
+    </div>
+    <p class="notes-after reveal">Don't hold it in. Just <em>shake it off</em>.</p>
+  </div>
+</section>
+
+<section class="sec tight">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">clearing out the day</span>
+      <h2>Three small steps</h2>
+      <p>No long entries. No need to come back every day.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <span class="no">one,</span>
+        <h3>Pick how you feel</h3>
+        <p>Tap the face closest to your mood. Pick a reason and the ways that fit it show up first.</p>
+        <div class="vis moods">
+          <svg><use href="#f-angry"/></svg><svg><use href="#f-sad"/></svg><svg><use href="#f-meh"/></svg><svg><use href="#f-ok"/></svg><svg><use href="#f-calm"/></svg>
+        </div>
+      </div>
+      <div class="step reveal">
+        <span class="no">two,</span>
+        <h3>Shake it off by hand</h3>
+        <p>Smash it hard, tap and pop, or quietly burn it. 24 ways, with sounds that feel real.</p>
+        <div class="vis modes">
+          <span class="chip">🫧 Bubble wrap</span><span class="chip">🍂 Crunchy leaves</span><span class="chip">🍉 Watermelon</span><span class="chip">🔥 Burn</span><span class="chip">🌊 Waves</span><span class="chip">🪨 Stack stones</span><span class="chip">⌨️ Keyboard</span>
+        </div>
+      </div>
+      <div class="step reveal">
+        <span class="no">three,</span>
+        <h3>Breathe, then one line</h3>
+        <p>Follow the circle to catch your breath, then note how you feel and one line about today.</p>
+        <div class="vis write">Today's me<br>held it together ✿</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec diary">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">just between us</span>
+      <h2>A mood journal<br>no one else will read</h2>
+      <p class="lead">Right after you let it out, you're surprisingly honest. Catch that moment in a diary, and someday looking back, you'll know yourself a little better.</p>
+      <ul class="checks">
+        <li><i>✎</i><div><b>One line a day, up to 500 characters</b><span>Write after shaking it off, or jump straight in with 'Write a diary'</span></div></li>
+        <li><i>☺</i><div><b>Before &amp; after mood, saved together</b><span>See how much lighter you felt</span></div></li>
+        <li><i>☾</i><div><b>30-day mood flow and calendar</b><span>Tap a date to read that day's entry again</span></div></li>
+        <li><i>♡</i><div><b>What's worked for me</b><span>Find out which ways calm you most</span></div></li>
+        <li><i>🔒</i><div><b>Stays on your phone</b><span>No login, nothing sent to a server</span></div></li>
+      </ul>
+    </div>
+    <div class="reveal">
+      <div class="book">
+        <svg class="heart"><use href="#heart"/></svg>
+        <div class="bh"><span class="d">October 4</span><span class="w">Saturday · 11:42 pm</span></div>
+        <div class="moodflow"><svg><use href="#f-angry"/></svg><span class="arrow">→</span><svg><use href="#f-calm"/></svg><span>Way lighter than before</span></div>
+        <div class="hand">Felt hurt after that meeting.<br>Smashed a whole watermelon<br>and somehow ended up laughing.<br>Tomorrow, I'll be on my own side.</div>
+        <span class="tag"># work</span> <span class="tag peach"># watermelon</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">made to feel like yours</span>
+      <h2>Every little thing, your way</h2>
+    </div>
+    <div class="likes">
+      <div class="like reveal">
+        <div class="swatches"><i style="background:#2E7E77"></i><i style="background:#D46A8C"></i><i style="background:#8B6FC9"></i><i style="background:#E0875A"></i><i style="background:#4A90C4"></i><i style="background:#B8894A"></i></div>
+        <h3>Six color themes</h3><p>Sage, rose, lavender, peach, sky and cream. Dark mode, too.</p>
+      </div>
+      <div class="like reveal">
+        <div class="fonts"><span>Aa</span><span>Aa</span><span>Aa</span></div>
+        <h3>Five fonts, handwriting included</h3><p>Pick the lettering that makes journaling feel like yours.</p>
+      </div>
+      <div class="like reveal">
+        <span class="bubble">How was your day today?</span>
+        <h3>A gentle 9pm reminder</h3><p>Only if you turn it on. We never nag you to come back.</p>
+      </div>
+      <div class="like reveal">
+        <div class="fortune">Little bits of luck pile up all day</div>
+        <h3>Daily fortune</h3><p>A tiny message to peek at on the check-in screen.</p>
+      </div>
+      <div class="like reveal">
+        <span class="sos">SOS</span>
+        <h3>SOS widget for hard moments</h3><p>One tap on your home screen and you're straight into breathing.</p>
+      </div>
+      <div class="like reveal">
+        <span class="modecount">24</span>
+        <h3>24 satisfying ways</h3><p>Glass, ice, ceramic, wax, leaves… even pick the sound it makes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec night">
+  <div class="stars"></div>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">on sleepless nights</span>
+      <h2>Quietly, right beside you</h2>
+      <p>Easy on the eyes, even with the lights off. These are real screens from the app.</p>
+    </div>
+  </div>
+  <div class="shots">
+    <figure><img src="assets/shot-hero.jpg" alt="Check-in screen to pick your mood" loading="lazy"><figcaption>Start with how you feel</figcaption></figure>
+    <figure><img src="assets/shot-burn.jpg" alt="Burn mode" loading="lazy"><figcaption>For days you just want to burn it all</figcaption></figure>
+    <figure><img src="assets/shot-breathe.jpg" alt="Five breathing patterns" loading="lazy"><figcaption>Five ways to breathe</figcaption></figure>
+    <figure><img src="assets/shot-log.jpg" alt="Mood log and calendar" loading="lazy"><figcaption>Your private log and calendar</figcaption></figure>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">what Tuk promises</span>
+      <h2>Three promises</h2>
+    </div>
+    <div class="promise">
+      <div class="reveal"><div class="ic">🌙</div><b>No scores, no streaks</b><span>You don't have to come every day. Just when you need it.</span></div>
+      <div class="reveal"><div class="ic">🔒</div><b>Stays on your phone</b><span>Your diary and moods are never sent anywhere.</span></div>
+      <div class="reveal"><div class="ic">🌷</div><b>It's okay if it didn't help</b><span>"Today it didn't really work" is worth keeping, too.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <span class="blob" style="width:360px;height:360px;background:#F9DCE3;left:10%;top:10%"></span>
+  <span class="blob" style="width:320px;height:320px;background:#FDE7DA;right:8%;bottom:0"></span>
+  <div class="wrap">
+    <h2 class="reveal">Leave today's feelings<br>right here</h2>
+    <p class="reveal">Free to start, right now.</p>
+    <div class="badges reveal">
       <a class="badge" href="https://apps.apple.com/app/id6814043279" target="_blank" rel="noopener">
         <svg viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
         App Store
@@ -114,59 +257,18 @@
         Google Play
       </a>
     </div>
-    <div class="hero-shot">
-      <img src="assets/shot-hero.jpg" alt="Tuk app screenshot - check in" loading="eager">
-    </div>
-  </section>
+    <p class="hand reveal">You did well today ♡</p>
+  </div>
+</section>
 
-  <section class="features wrap">
-    <h2>There's more than just smashing</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="assets/shot-breathe.jpg" alt="Five breathing patterns" loading="lazy">
-        <div class="cap"><b>Five breathing patterns</b><span>Switch to an easier one anytime it feels like too much</span></div>
-      </div>
-      <div class="card">
-        <img src="assets/shot-log.jpg" alt="Before and after mood log" loading="lazy">
-        <div class="cap"><b>A log just for you</b><span>Nothing sent anywhere, stays on this device</span></div>
-      </div>
-      <div class="card">
-        <img src="assets/shot-burn.jpg" alt="Burn mode" loading="lazy">
-        <div class="cap"><b>Burn</b><span>For the days you just want to torch it all, no words needed</span></div>
-      </div>
-    </div>
-  </section>
+<footer>
+  <div class="flinks">
+    <a href="https://pollen-witch-f01.notion.site/3d0eb9661eb780e7a5b0df65c54f6725">Privacy Policy</a>
+    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+  </div>
+  Contact: gasmon0@gmail.com
+</footer>
 
-  <section class="features wrap">
-    <h2>Good for days like these</h2>
-    <div class="grid">
-      <div class="card"><div class="cap"><b>When anger boils up</b><span>Don't hold it in — smash and pop it out for real anger management</span></div></div>
-      <div class="card"><div class="cap"><b>When anxiety keeps you up</b><span>Breathing exercises to calm your mind before bed</span></div></div>
-      <div class="card"><div class="cap"><b>When you need a mood log</b><span>Track before-and-after mood changes like a mental health journal</span></div></div>
-    </div>
-  </section>
-
-  <section class="cta wrap">
-    <h2>Start now</h2>
-    <div class="badges">
-      <a class="badge" href="https://apps.apple.com/app/id6814043279" target="_blank" rel="noopener">
-        <svg viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
-        App Store
-      </a>
-      <a class="badge" href="https://play.google.com/store/apps/details?id=com.hesoapp.tuk" target="_blank" rel="noopener">
-        <svg viewBox="0 0 512 512" fill="currentColor"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60-34.1c17.7-11.7 17.7-49.6-1.1-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
-        Google Play
-      </a>
-    </div>
-  </section>
-
-  <footer>
-    <div class="flinks">
-      <a href="https://pollen-witch-f01.notion.site/3d0eb9661eb780e7a5b0df65c54f6725">Privacy Policy</a>
-      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
-    </div>
-    Contact: gasmon0@gmail.com
-  </footer>
-
+<script src="../assets/site.js"></script>
 </body>
 </html>
