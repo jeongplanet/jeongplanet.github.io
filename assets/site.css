@@ -1,7 +1,7 @@
 :root{
-  --bg:#FFF7F2; --paper:#FFFDFB; --ink:#3B2D3A; --ink-2:#6E5D6B; --haze:#A8979F;
-  --rose:#E7849F; --rose-soft:#F9DCE3; --lav-soft:#ECE5FA;
-  --peach-soft:#FDE7DA; --mint-soft:#DDF3EC; --line:#F0DDE2;
+  --bg:#F5F4EF; --paper:#FFFFFF; --ink:#1C2624; --ink-2:#55615E; --haze:#87908D;
+  --rose:#2E7E77; --rose-soft:#D7E8E3; --lav-soft:#ECEBE4;
+  --peach-soft:#ECEBE4; --mint-soft:#DDF3EC; --line:#DCDDD5;
   --serif:"Gowun Batang",serif; --sans:"Gowun Dodum",-apple-system,"Apple SD Gothic Neo",sans-serif; --pen:"Nanum Pen Script",cursive;
 }
 *{box-sizing:border-box}
