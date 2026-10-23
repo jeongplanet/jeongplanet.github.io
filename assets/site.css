@@ -188,3 +188,36 @@ footer .flinks{margin-bottom:8px}
   .book .hand{font-size:1.45rem}
   .shots{justify-content:flex-start}
 }
+
+/* 개인정보 처리방침·이용약관 */
+body.doc header.top a.home{display:flex; align-items:center; gap:10px; color:inherit; text-decoration:none}
+.docbody{max-width:820px; padding-bottom:60px}
+.docbody h1{font-size:1.9rem; margin:10px 0 18px}
+.docbody h2{font-size:1.3rem; margin:34px 0 10px}
+.docbody h3{font-size:1.08rem; margin:28px 0 8px}
+.docbody p, .docbody li{color:var(--ink-2); font-size:.95rem}
+.docbody ul, .docbody ol{padding-left:22px; margin:6px 0}
+.docbody table{width:100%; border-collapse:collapse; margin:10px 0 16px; font-size:.88rem; background:#fff; border-radius:12px; overflow:hidden}
+.docbody th, .docbody td{border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; color:var(--ink-2)}
+.docbody th{background:var(--rose-soft); color:var(--ink); font-weight:700}
+.docbody a{color:#B4537A; word-break:break-all}
+
+/* 끌어당김 */
+.attract{background:linear-gradient(180deg,var(--bg),#FBF1E4 40%,var(--bg))}
+.attract .wrap{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center}
+.attract h2{font-size:2.1rem; line-height:1.4; margin-bottom:16px}
+.attract .lead{color:var(--ink-2); margin:0 0 24px}
+.attract .checks i{background:#F6E6CF}
+.attract-vis{position:relative; height:560px}
+.attract-vis .ph{position:absolute; width:250px; border-radius:30px; overflow:hidden; border:7px solid #fff; box-shadow:0 40px 70px -30px rgba(59,45,58,.5)}
+.attract-vis .ph img{display:block; width:100%}
+.attract-vis .ph.a{left:8%; top:0; transform:rotate(-4deg); z-index:2}
+.attract-vis .ph.b{right:4%; top:70px; transform:rotate(5deg)}
+.wmini{display:inline-grid; grid-template-columns:repeat(3,22px); gap:5px; padding:9px; border-radius:14px; background:#C99A68; box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+.wmini i{display:block; height:26px; background:#FFFDF8; border-radius:2px; box-shadow:0 2px 4px rgba(0,0,0,.25)}
+.wmini i:nth-child(1){transform:rotate(-4deg)} .wmini i:nth-child(3){transform:rotate(4deg)}
+@media (max-width:820px){
+  .attract .wrap{grid-template-columns:1fr; gap:30px}
+  .attract-vis{height:440px}
+  .attract-vis .ph{width:200px}
+}

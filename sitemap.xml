@@ -11,4 +11,6 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://jeongplanet.github.io/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://jeongplanet.github.io/en/"/>
   </url>
+  <url><loc>https://jeongplanet.github.io/privacy.html</loc></url>
+  <url><loc>https://jeongplanet.github.io/terms.html</loc></url>
 </urlset>
